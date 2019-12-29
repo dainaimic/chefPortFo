@@ -1,0 +1,111 @@
+footer{//BEGINING OF FOOTER TAG
+    flex:1;
+    .flexColSB();
+    .autoHW();
+
+        .footTop{//starting of footer top section address and form
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            align-content:center;
+            width:100%;
+            flex:1;
+                
+                    ._form_{//starting of form 
+                        .flexColSA();
+                        align-self:center;
+                        -webkit-min-width:450px;
+                        -webkit-min-height:350px;
+                        -webkit-max-height:400px;
+                        -webkit-max-width:500px;
+                        max-height:400px;
+                        max-width:500px;
+                        min-height:350px;
+                        min-width:450px;
+                        background-color:rgba(23,40,53,.3);
+                        border:solid @color1;
+                        padding:1%;
+                        border-radius:10px;
+
+                                label[for='Contactname']{
+                                    text-align:center;
+                                }
+                                textarea,input{
+                                    font-weight:bolder;
+                                    font-size:1.3rem;
+                                    background-color:azure;
+                                }
+                                div{
+                                    text-align:center;
+                                        button{
+                                            font-weight:bolder;
+                                            background-color:@color1;
+                                            -webkit-text-fill-color:azure;
+                                             color:azure;
+                                             padding:2% 8%;
+                                             font-size:1.3rem;
+
+                                        }
+                                }
+                    }
+        }//ending of footer top section address and form
+
+        .nb{
+            flex:1;
+            .flexRowC();
+            .hug();
+            align-items:center;
+            text-align:center;
+           
+           
+           .navbar-brand:hover{
+            cursor:default;
+            -webkit-text-fill-color:cadetblue;
+            color:cadetblue;
+           } 
+        }
+
+
+        @media screen and (max-width:500px){
+           .footTop{ 
+               
+                    ._form_{
+                        .hug();
+                        -webkit-min-width:100%;
+                        -webkit-min-height:350px;
+                        -webkit-max-height:400px;
+                        -webkit-max-width:100%;
+                        max-height:400px;
+                        max-width:100%;
+                        min-height:350px;
+                        min-width:100%;
+                    }
+        }
+    }
+
+
+        @media screen and (max-width:900px) and (max-height:500px)
+        and (min-width:501px){
+            .footTop{ 
+                .flexColSB();
+                align-items:center;
+                     ._form_{
+                         .hug();
+                     }
+         }
+        }
+
+
+        @media screen and (max-width:1200px) and (max-height:1200px)
+        and (min-width:700px){
+            
+        }
+
+
+        @media screen and (max-width:1380px) and (max-height:1380px)
+        and (min-width:700px){
+            
+}
+}
+
+//END OF FOOTER TAG

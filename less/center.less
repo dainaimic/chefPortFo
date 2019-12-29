@@ -1,0 +1,158 @@
+.center{//BEGINING OF CENTER MAIN TAB
+    flex:2;
+    .hug();
+    .flexColSB();
+    align-items:stretch;
+    padding:0% 5%;
+
+               
+    
+                .bigImg{
+                    overflow:hidden;
+                    flex:1;
+                    .hug();
+                    .bgCover();
+                    background-image:url(../img/img1.jpg);
+                    padding:15% 0%;
+                    margin:5% 0%;
+                    .flexRowSA();
+                    justify-content:flex-start;
+                    align-items:flex-start;
+                                span:nth-child(1){
+                                    .hug();                                    
+                                }
+                                .time_{
+                                    -webkit-text-fill-color:@color1;
+                                     color:@color1;
+                                     text-shadow:0 0 5px #fff;
+                                     -webkit-animation:shift 8s linear infinite;
+                                     animation:shift 8s linear infinite;
+                                     cursor:pointer;
+                                }
+
+                                .clock{
+                                    background-color:rgba(0,0,0, 0.7);
+                                    -webkit-text-fill-color:#fff;
+                                     color:#fff;
+                                }
+
+                                @keyframes shift {
+                                    0%{
+                                        -webkit-text-fill-color:@color1;
+                                     color:@color1;
+                                        text-shadow:0 0 5px red;
+                                        -webkit-text-stroke:.5px #000
+                                    }
+
+
+                                    25%{
+                                        -webkit-text-fill-color:cadetblue;
+                                        color:cadetblue;
+                                           text-shadow:0 0 5px @color1;
+                                           -webkit-text-stroke:.5px rgb(146, 3, 3)
+                                    }
+
+
+                                    50%{
+                                        -webkit-text-fill-color:green;
+                                        color:green;
+                                           text-shadow:0 0 5px rgb(8, 18, 155);
+                                           -webkit-text-stroke:.5px rgb(162, 199, 28)
+                                    }
+
+                                    75%{
+                                        -webkit-text-fill-color:rgb(121, 11, 48);
+                                        color:rgb(121, 11, 48);
+                                           text-shadow:0 0 5px rgb(92, 119, 90);
+                                           -webkit-text-stroke:.5px rgb(53, 0, 0)
+                                    }
+
+
+                                    100%{
+                                        -webkit-text-fill-color:rgb(80, 136, 168);
+                                        color:rgb(80, 136, 168);
+                                           text-shadow:0 0 5px rgb(100, 86, 24);
+                                           -webkit-text-stroke:.5px rgb(10, 100, 40)
+                                    }
+                                }
+                }
+
+                .centerRow1{
+                    flex:1;
+                    .hug();
+                    .flexRowSA();
+                    align-items:center;
+                    padding:5% 0%;
+
+
+
+                            .card{
+                                background-color:rgba(23,40,53,.3);
+                                border:solid @color1;
+                                font-weight:bolder;
+                            }
+                            .card:hover{
+                                box-shadow:0 0 5px #000;
+                            }
+
+                            .card-body{
+                                text-align:center;
+                                border-top:solid @color1;
+                                
+                                        h5{
+                                            font-size:2rem;
+                                        }
+                                        p{
+                                            font-size:1.5rem;
+                                        }
+                                        a{
+                                            font-weight:bolder;
+                                        }
+                            }
+                }
+
+                @media screen and (min-width:1000px){//RESPONISIVE
+                    .centerRow1{
+                        
+                                .card{
+                                    min-width:30%;
+                                    margin:2% 0%;
+                                }
+                    } 
+                    
+                }
+
+
+                @media screen and (max-width:500px){
+                    .clock{
+                        font-size:1rem;
+                    }
+
+                    .centerRow1{
+                        .flexColSA();
+                        align-items:stretch;
+                        padding:5%;
+                                .card{
+                                    min-width:100%;
+                                    margin:2% 0%;
+                                }
+                    } 
+                    
+                }
+
+
+                @media screen and (max-width:900px)
+                and (min-width:501px) and (max-height:500px){
+                    .centerRow1{
+                        .flexColSA();
+                        align-items:stretch;
+                        padding:5% 15%;
+                                .card{
+                                    min-width:100%;
+                                    margin:4% 0%;
+                                }
+                    } 
+                    
+                }//RESPONSIVE
+                
+}//END OF CENTER MAIN TAB
